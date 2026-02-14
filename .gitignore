@@ -1,0 +1,43 @@
+# --- 1. THE BRAINS (Heavy Model Weights) ---
+# Never commit large binary files. Users should download them via scripts.
+models/*.pt
+models/*.pth
+models/*.onnx
+
+# --- 2. THE DATA (Datasets) ---
+# Data should live locally or in the cloud, not in Git.
+data/
+
+# --- 3. THE RESULTS (Logs & Plots) ---
+# You might want to keep the final report, but not every test run.
+results/logs/
+# Optional: Uncomment if you don't want to track generated plots
+results/plots/
+
+# --- 4. PYTHON JUNK (Generated files) ---
+# These are compiled Python files that appear automatically.
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- 5. C++ BUILD ARTIFACTS (The Engine) ---
+# Never commit the compiled executable or CMake temp files.
+src/cpp_engine/build/
+src/cpp_engine/bin/
+*.o
+*.so
+*.dylib
+
+# --- 6. SYSTEM & IDE JUNK ---
+# Mac OS specific annoying file
+.DS_Store
+
+# VS Code / PyCharm settings (Optional, but recommended)
+.vscode/
+.idea/
+
+# Environment variables (Secrets)
+.env
+venv/
+env/
